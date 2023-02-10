@@ -1,0 +1,35 @@
+
+
+* {
+    width: 100%
+}
+
+header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+#index_article {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/något.jpg);
+}
+
+.index_section {
+    width: 100vw;
+    display: flex;
+
+}
+
+section {
+    width: 100%;
+}
+
+
+
+
+
+
+
