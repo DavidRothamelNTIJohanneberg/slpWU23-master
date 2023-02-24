@@ -5,17 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <script src="js/button.js"></script>
     <title>D.R Portfolio</title>
 
 </head>
 <body>
     <header>
-        <i>=</i>
-        <h1>Portfolio á la David</h1>
+        <div id="index_button">
+            <i>=</i>
+        </div>
+        <div>
+            <h1>D.R Portfolio</h1>
+        </div>
     </header>
+
+    <div class="fade-layer"></div>
+
     <main>
         <article id="index_article">
-            <p></p>
+            <p id="index_text">David Rothamel, Teknikare. Tycker om att bygga robotar</p>
         </article>
         <section>
             <div>
@@ -59,18 +67,14 @@
         </section>
     </main>
     <nav> <!--Drop down menu-->
-        <div>
-            <i>=</i>
-        </div>
-        <div>
-            <a>Program</a>
-        </div>
-        <div>
-            <a>TIL</a>
-        </div>
-        <div>
-            <a>Om mig</a>
-        </div>
+        <i class="center_text">=</i>
+
+        <a class="center_text" href="program.html">Program</a>
+
+        <a class="center_text" href="TIL.html">TIL</a>
+
+        <a class="center_text" href="Om_mig.html">Om mig</a>
     </nav>
+
 </body>
 </html>
