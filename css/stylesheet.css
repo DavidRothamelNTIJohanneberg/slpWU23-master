@@ -9,6 +9,15 @@ a {
 
 body {
     margin: 0px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
 }
 
 .center_text {
@@ -69,13 +78,6 @@ i {
     /*background-image: url(../img/något.jpg);*/
 }
 
-#index_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5px;
-}
-
 #index_text {
     background-color: wheat;
     margin: 20%;
@@ -84,6 +86,11 @@ i {
 .index_section {
     width: 100vw;
     display: flex;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+    /*Fix it*/
 }
 
 nav{
@@ -99,6 +106,30 @@ nav{
     z-index: 10;
 }
 
+#program {
+    min-height: 10%;
+}
+
+#program_main {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.project_program {
+    display: flex;
+    height: 15vh;
+    border-color: black;
+    border-style: none;
+    border-bottom-style: solid;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects {
+    min-height: 30%;
+}
+
 section {
     width: 100%;
     
@@ -108,6 +139,49 @@ section {
     top: 0;
 }
 
+.side_scroll {
+    background-color: wheat;
+    overflow: auto;
+    white-space: nowrap;
+
+}
+
+.side_scroll div {
+    display: inline-block;
+    width: min-content;
+    margin: 10px;
+ }
+
+.side_scroll::-webkit-scrollbar {
+    display: none;
+}
+
+#TIL_main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#TIL_main article {
+    width: 60vw;
+    margin: 20vw;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 5px;
+    background-color: wheat;
+    
+}
+
+article h5 {
+    height: 10%;
+}
+
+article img {
+    height: 50%;
+}
+
+article p {
+    height: 40%;
+}
 
 
 

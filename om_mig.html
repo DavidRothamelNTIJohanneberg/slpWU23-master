@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/button.js"></script>
     <link rel="stylesheet" href="./css/stylesheet.css">
     <title>Om mig</title>
 </head>
 <body>
     <header>
-        <i>=</i>
-        <h1>Om mig</h1>
+        <div class="button">
+            <i>=</i>
+        </div>
+        <div>
+            <h1>Om mig</h1>
+        </div>
     </header>
+
+    <div class="fade-layer"></div>
+
     <main>
         <section>
             <img src="" alt="">
@@ -21,18 +29,13 @@
         </article>
     </main>
     <nav> <!--Drop down menu-->
-        <div>
-            <i>=</i>
-        </div>
-        <div>
-            <a>Program</a>
-        </div>
-        <div>
-            <a>TIL</a>
-        </div>
-        <div>
-            <a>Om mig</a>
-        </div>
+        <i class="center_text menu_button">=</i>
+
+        <a class="center_text" href="index.html">Start</a>
+
+        <a class="center_text" href="program.html">Program</a>
+
+        <a class="center_text" href="TIL.html">TIL</a>
     </nav>
 </body>
 </html>
