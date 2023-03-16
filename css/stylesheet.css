@@ -117,12 +117,15 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: violet;
+    background-color: #474e5d;
     /*background-image: url(../img/något.jpg);*/
 }
 
 #index_text {
-    background-color: wheat;
+    border: 4px solid #FF9F55;
+    border-radius: 15px;
+    background-color: white;
+    padding: 5px;
     margin: 20%;
 }
 
@@ -173,6 +176,10 @@ nav{
     width: 100vw;
 }
 
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 #program {
     min-height: 10%;
 }
@@ -194,6 +201,7 @@ nav{
 }
 
 #projects {
+    border-top: #FF9F55 5px solid;
     min-height: 30%;
 }
 
@@ -223,7 +231,7 @@ nav{
 }
 
 .side_scroll {
-    background-color: wheat;
+    background-color: #474e5d;
     overflow: auto;
     white-space: nowrap;
 
@@ -256,7 +264,7 @@ nav{
     width: 60vw;
     height: 50vh;
     padding: 5px;
-    background-color: wheat;    
+    background-color: #474e5d;    
 }
 
 .timeline {
