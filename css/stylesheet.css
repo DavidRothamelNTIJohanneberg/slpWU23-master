@@ -125,8 +125,18 @@ header {
     display: none;
 }
 
-i {
-    font-size: 50px;
+i.hamburger_menu {
+    font-size: 3em;
+}
+
+i.center_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-color: black;
+    border-style: none;
+    border-bottom-style: solid;
+    font-size: 2em;
 }
 
 #index_article {
@@ -174,6 +184,14 @@ main::-webkit-scrollbar {
     /*Fix it*/
 }
 
+.material-icons {
+    font-size: 6em;
+}
+
+.material-icons:hover {
+    cursor: pointer;
+}
+
 .mid {
     margin-left: 25%;
     margin-right: 25%;
@@ -202,6 +220,21 @@ nav{
 p {
     font-family: Helvetica, sans-serif;
 }
+
+#pointer {
+    display: flex;
+    color: #FF9F55;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#pointer > *{
+    width: fit-content;
+    color: #FF9F55;
+}
+
 
 #program {
     min-height: 10%;

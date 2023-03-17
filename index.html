@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./css/stylesheet.css">
     <script src="js/button.js"></script>
     <title>D.R Portfolio</title>
-
 </head>
+
 <body>
     <header>
         <div class="button">
-            <!--<i>=</i>-->
+            <i class="hamburger_menu material-icons">menu</i>
         </div>
         <div>
             <h1>D.R Portfolio</h1>
@@ -25,110 +27,114 @@
         <article id="index_article">
             <p id="index_text">David Rothamel, Teknikare. Tycker om att bygga robotar</p>
         </article>
-        <div>
+        <div id="pointer">
             <h2>Projekt</h2>
-            <img src="./img/double_chevron.jpg" alt="two downward pointing arrows">
+            <a href="#section_slides"><i class="material-icons">keyboard_double_arrow_down</i></a>
+            <!--Länk på gränssnitt så att man hoppar ner till TIL och kod-->
         </div>
-        <h3 class="mid box fit-content">Tillämpad programmering</h3>
-        <section class="side_scroll" id="projects">
-            <!--Kanske lägga till rubrik för vad det är?-->
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-        </section>
-        <h3 class="mid box fit-content">Program och kod</h3>
-        <section class="side_scroll" id="programs">
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
-            <div class="inline project_card">
-                <img src="./img/red_ring.jpg" alt="red ring">
-                <!--<p></p> För att kunna ha ämne på projektet-->
-                <h5>Quadroped</h5>
-                <p>Lorem ipsum, dol</p>
-            </div>
+        <section id="section_slides">
+            <h3 class="mid box fit-content">Tillämpad programmering</h3>
+            <section class="side_scroll" id="projects">
+                <!--Kanske lägga till rubrik för vad det är?-->
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+            </section>
+            <h3 class="mid box fit-content">Program och kod</h3>
+            <section class="side_scroll" id="programs">
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+                <div class="inline project_card">
+                    <img src="./img/red_ring.jpg" alt="red ring">
+                    <!--<p></p> För att kunna ha ämne på projektet-->
+                    <h5>Quadroped</h5>
+                    <p>Lorem ipsum, dol</p>
+                </div>
+            </section>
         </section>
     </main>
-    <nav> <!--Drop down menu-->
-        <i class="center_text menu_button">=</i>
+    <nav>
+        <!--Drop down menu-->
+        <i class="center_text menu_button material-icons">menu</i>
 
         <a class="center_text" href="program.html">Program</a>
 
@@ -138,4 +144,5 @@
     </nav>
 
 </body>
+
 </html>

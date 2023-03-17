@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     menu_button.addEventListener("click", show);
 
     function show() {
-
         menu.classList.toggle("show");
         layer.classList.toggle("visible");
     }
