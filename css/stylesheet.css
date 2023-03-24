@@ -10,6 +10,8 @@ a {
 article h5 {
     height: 10%;
     margin: 2px;
+    font-size: 20px;
+    text-align: center;
     /*Center?*/
 }
 
@@ -20,6 +22,7 @@ article img {
 article p {
     height: 40%;
     margin: 0px;
+    font-size: 14px;
 }
 
 .back_button {
@@ -55,6 +58,10 @@ body {
     border-color: black;
     border-style: none;
     border-bottom-style: solid;
+}
+
+#chevron_left {
+    font-size: 2em;
 }
 
 .container {
@@ -140,8 +147,8 @@ i.center_text {
 }
 
 #index_article {
-    margin-top: 40%;
-    margin-bottom: 60%;
+    margin-top: 20%;
+
     display: flex;
     justify-content: end;
     align-items: center;
@@ -192,6 +199,11 @@ main::-webkit-scrollbar {
     cursor: pointer;
 }
 
+#medic {
+    width: 50%;
+    margin: 10%;
+}
+
 .mid {
     margin-left: 25%;
     margin-right: 25%;
@@ -210,12 +222,20 @@ nav{
     z-index: 10;
 }
 
+#om_mig_over {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #om_oss {
     box-sizing: border-box;
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
     width: 100vw;
 }
+
 
 p {
     font-family: Helvetica, sans-serif;
@@ -319,15 +339,24 @@ p {
     display: none;
 }
 
+.symbol_size {
+    width: 14vw;
+}
+
+.TIL_img {
+    border-radius: 4px;
+}
+
 #TIL_main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 #TIL_main a {
-    width: 60vw;
-    margin: 20vw;
+    width: fit-content;
+    height: auto;
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -339,6 +368,10 @@ p {
     background-color: white;
     border: solid #FF9F55 8px;
     border-radius: 10px;
+}
+
+#TIL_main > article p {
+    font-size: 14px;
 }
 
 .timeline {
