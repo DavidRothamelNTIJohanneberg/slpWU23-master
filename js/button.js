@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     menu_button.addEventListener("click", show);
 
     function show() {
-        menu.classList.toggle("show");
+        menu.classList.toggle("show_menu");
         layer.classList.toggle("visible");
     }
 });
