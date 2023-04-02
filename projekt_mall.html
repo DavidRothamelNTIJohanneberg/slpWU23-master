@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +10,34 @@
     <link rel="stylesheet" href="./css/stylesheet.css">
     <title>Quadroped</title>
 </head>
-<body>
-    <header>
-        <div class="button">
-            <a class="back_button" href="./TIL.html"><i class="material-icons" id="chevron_left">chevron_left</i></a>
-        </div>
-        <div>
-            <h1>Projekt_Namn</h1>
-        </div>
-    </header>
 
+<body>
+    <div id="projekt_container" class="container">
+        <header id="projekt_header">
+            <div class="button">
+                <a class="back_button" href="./TIL.html"><i class="material-icons"
+                        id="chevron_left">chevron_left</i></a>
+            </div>
+            <div>
+                <h1>Projekt_Namn</h1>
+            </div>
+        </header>
+
+
+        <main id="projekt_main">
+            <img src="./img/red_ring.jpg" alt="red ring" class="scroll_over hide">
+            <div class="white" id="projekt_substance">
+                <a href="https://github.com/DavidRothamelNTIJohanneberg"><img src="./img/github_orange.png" alt=""
+                        class="symbol_size"></a>
+                <!--Visa som en knapp istället-->
+                <!--<h2></h2>-->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit porro dignissimos voluptates tempore
+                    corrupti! Deleniti exercitationem, enim ea, saepe aperiam error labore accusamus natus harum modi
+                    non? Ea, voluptas animi.</p>
+            </div>
+        </main>
+    </div>
     <div class="fade-layer"></div>
-    <main>
-        <img src="./img/red_ring.jpg" alt="" class="scroll_over"><!--Lägg till så att man kan scrolla över med resten av sidan-->
-        <div>
-            <a href="https://github.com/DavidRothamelNTIJohanneberg"><img src="./img/github_orange.png" alt="" class="symbol_size"></a><!--Visa som en knapp istället-->
-            <!--<h2></h2>-->
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit porro dignissimos voluptates tempore corrupti! Deleniti exercitationem, enim ea, saepe aperiam error labore accusamus natus harum modi non? Ea, voluptas animi.</p>    
-        </div>
-    </main>
 </body>
+
 </html>

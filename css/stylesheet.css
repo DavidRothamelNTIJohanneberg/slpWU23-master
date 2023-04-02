@@ -80,6 +80,12 @@ body {
     font-size: 2em;
 }
 
+.colour_circle {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+
 .container {
     display: grid;
 }
@@ -132,6 +138,14 @@ header {
     display: none;
 }
 
+.hide_phone {/*remove*/
+    display: none;
+}
+
+.html {
+    background-color:#e34c26 ;
+}
+
 i.hamburger_menu {
     font-size: 3em;
 }
@@ -155,11 +169,35 @@ i.center_text {
     /*background-image: url(../img/något.jpg);*/
 }
 
+.index_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#index_container {
+    grid-template-rows: 15vh 1fr;
+    height: 100%;
+    width: 100vw;
+}
+
+#index_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#index_main article {
+    margin-top: 50%;
+    margin-bottom: 60%;
+    width: 90%;
+}
+
 #index_text {
     border: 4px solid #FF9F55;
     border-radius: 15px;
     background-color: white;
-    padding: 5px;
+    padding: 10px;
 }
 
 .index_section {
@@ -167,8 +205,12 @@ i.center_text {
     display: flex;
 }
 
+.inline_block {
+    display: inline-block;
+}
+
 .left {
-    left: 0;
+    left: 0;/*quickfix*/
 }
 
 .left::before {
@@ -182,6 +224,10 @@ i.center_text {
     border: medium solid white;
     border-width: 10px 0 10px 10px;
     border-color: transparent transparent transparent white;
+}
+
+li {
+    margin-bottom: 4.5rem;
 }
 
 main::-webkit-scrollbar {
@@ -203,8 +249,7 @@ main::-webkit-scrollbar {
 }
 
 .mid {
-    margin-left: 25%;
-    margin-right: 25%;
+    justify-self: center;
 }
 
 nav{
@@ -225,13 +270,14 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-bottom: #FF9F55 4px solid;
 }
 
 #om_oss {
     box-sizing: border-box;
     background-color: #474e5d;
     font-family: Helvetica, sans-serif;
-    width: 100vw;
+    width: 100%;
 }
 
 
@@ -253,7 +299,6 @@ p {
     color: #FF9F55;
 }
 
-
 #program {
     min-height: 10%;
 }
@@ -262,6 +307,8 @@ p {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
+    width: 80%;
+    justify-self: center;
 }
 
 .project_card {
@@ -276,23 +323,58 @@ p {
     font-size: 10px;
 }
 
+.project_card a {
+    color: white;
+}
+
 .project_card img {
     height: 50%;
     border-radius: 5px;
 }
 
 .project_program {
-    display: flex;
-    height: 15vh;
-    border-color: black;
-    border-style: none;
-    border-bottom-style: solid;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-areas: 
+    "hd tp"
+    "p ."
+    "sc .";
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 35% 40% 25%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.project_program h3 {
+    grid-area: hd;
+    color: midnightblue;
+    align-self: center;
+    text-align: left;
+}
+
+.project_program p {
+    grid-area: p;
+    text-align: left;
+}
+
+.project_program .topic {
+    grid-area: tp;
+    align-self: center;
+    border: rgba(0, 0, 0, 0.541) 1px solid;
+    border-radius: 2em;
+    height: fit-content;
+}
+
+.project_program .script {
+    grid-area: sc;
+    justify-self: left;
 }
 
 #projects {
     min-height: 30%;
+}
+
+.python {
+    background-color: #3572A5
 }
 
 .right {
@@ -316,6 +398,11 @@ p {
     border-color: transparent white transparent transparent;
 }
 
+.scroll_over {
+    position: fixed;
+    z-index: -1;
+}
+
 .show_menu {
     top: 0;
 }
@@ -326,6 +413,7 @@ p {
     overflow: auto;
     white-space: nowrap;
     height: 40vh;
+    width: 100vw;
 }
 
 .side_scroll div {
@@ -343,6 +431,8 @@ p {
 
 .TIL_img {
     border-radius: 4px;
+    width: 80%;
+    justify-self: center;
 }
 
 #TIL_main {
@@ -353,10 +443,14 @@ p {
 }
 
 #TIL_main a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: fit-content;
     height: auto;
     margin-top: 10px;
     margin-bottom: 0px;
+    width: 90%;
 }
 
 #TIL_main article {
@@ -389,6 +483,13 @@ p {
     margin-left: -3px;
 }
 
+.topic h4{
+    margin: 0;
+}
+
+.color_white {
+    background-color: white;
+}
 
 /* Inte jätteeffektivt */
 @media screen and (max-width: 600px) {
@@ -416,19 +517,16 @@ p {
         left: 31px;
     }
 
-    * {
-        width: 100%
-    }
 }
 
 @media screen and (min-width: 600px) {
-    .hide {/*remove*/
+    .hide {
         display: none !important;
     }
 
     img {
-        width: 100% !important;
-        height: 100% !important;
+        width: 100%;
+        height: 100%;
     }
 
     #index_article {
@@ -436,6 +534,7 @@ p {
         justify-self: center;
         align-self: center;
         margin: 1rem;
+
     }
 
     .index_box {
@@ -447,29 +546,58 @@ p {
         width: 100%;
     }
 
-    #index_container {
-        grid-template-rows: 15% 85%;
-        height: 100%;
-    }
-
     #index_main {
         display: grid;
         grid-template-rows: 30% 70%;
         width: 100%;
     }
 
+    #index_main article {
+        margin-top: 10%;
+        margin-bottom: initial;
+        width: auto;
+    }
+
     #index_text {
         margin: 10%;
     }
 
+    .left {
+        left: 3.3%;
+    }
+
+    #medic {
+        margin: 1%;
+        width: 25%;
+    }
+
     #om_mig_container {
-        grid-template-rows: 15% 85%;
-        height: 100vh;
+        grid-template-rows: 7% 93%;
+        width: 100%;
+    }
+
+    #om_mig_over {
+        height: 100%;
+
     }
 
     #om_oss {
         display: grid;
         height: 100%;
+    }
+
+    #program_main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        width: 60%;
+        justify-self: center;
+    }
+
+    .project_program {
+        width: 80%;
+        justify-self: center;
+        margin: 15px;
     }
 
     .project_card {
@@ -478,11 +606,56 @@ p {
         height: 70%;
     }
 
+    #projekt_container {
+        grid-template-areas: 
+        "hd hd"
+        "nv mn" ;
+        grid-template-rows: 15% 85%;
+        grid-template-columns: 20% 80%;
+        width: 100%;
+        height: 100vh;
+    }
+
+    #projekt_header {
+        grid-area: hd;
+        height: 100%;
+    }
+
+    .projekt_img {
+        z-index: -1;
+    }
+
+    #projekt_main {
+        display: grid;
+        grid-area: mn;
+        grid-template-rows: 20vh auto;
+        background-image: url("../img/red_ring.jpg");
+    }
+
+    #projekt_main p { 
+        height: fit-content;
+        margin-top: 40vh;
+    }
+
+    #projekt_legend {
+        grid-area: nv;
+        position: fixed;
+        top: 15%;
+        height: fit-content;
+        width: 15%;
+        margin: 15px;
+    }
+
+    #projekt_substance {
+        position: static;
+    }
+
     #section_slides {
         display: flex;
         flex-direction: row;
         justify-content: center;
         height: 100%;
+        width: 100vw;
     }
 
     .show {
@@ -494,6 +667,7 @@ p {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         overflow: initial;
+        width: auto;
     }
 
     #TIL_container {
@@ -515,11 +689,14 @@ p {
         grid-template-rows: 50% 10% 40%;
         align-self: center;
         justify-self: center;
-        width: 90%;
-        height: 90%;
+        width: 70%;
+        height: 85%;
         margin: 5px;
     }
 
-
+    .timeline {
+        width: 100%;
+        margin-top: 4px;
+    }
 
 }
