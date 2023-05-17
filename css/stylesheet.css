@@ -27,8 +27,9 @@ article p {
 
 body {
     margin: 0px;
-    background-color: #474e5d;
-    -ms-overflow-style: none;  /* IE and Edge */
+    background-color: hsl(221, 13%, 32%);
+    -ms-overflow-style: none; /* IE and Edge */
+    overflow-x: hidden;
     scrollbar-width: none;  /* Firefox */
     /*Set a nice font bitte*/
 }
