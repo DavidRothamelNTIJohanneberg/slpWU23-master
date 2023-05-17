@@ -4,7 +4,7 @@ a {
 }
 
 article h5 {
-    height: 10%;
+    height: auto;
     margin: 2px;
     font-size: 20px;
     text-align: center;
@@ -133,6 +133,11 @@ header {
     border-color: black;
     border-style: none;
     border-bottom-style: solid;
+}
+
+.header_align {
+    display: flex;
+    align-items: center;
 }
 
 .hide {
