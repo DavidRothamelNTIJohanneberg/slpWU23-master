@@ -8,6 +8,7 @@ a {
 }
 
 article h5 {
+    height: auto;
     margin: 2px;
     font-size: 20px;
     text-align: center;
@@ -136,6 +137,16 @@ header {
     border-color: black;
     border-style: none;
     border-bottom-style: solid;
+    align-items: center;
+}
+
+.header_align {
+    display: flex;
+    align-items: center;
+}
+
+.header_align {
+    display: flex;
     align-items: center;
 }
 
