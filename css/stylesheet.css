@@ -1,10 +1,13 @@
+* {
+    font-family: 'SamsungSharpSans',arial,sans-serif;
+}
+
 a {
     color: black;
     text-decoration: none;
 }
 
 article h5 {
-    height: 10%;
     margin: 2px;
     font-size: 20px;
     text-align: center;
@@ -133,6 +136,7 @@ header {
     border-color: black;
     border-style: none;
     border-bottom-style: solid;
+    align-items: center;
 }
 
 .hide {
@@ -144,7 +148,7 @@ header {
 }
 
 .html {
-    background-color:#e34c26 ;
+    background-color:#e34c26;
 }
 
 i.hamburger_menu {
@@ -255,12 +259,12 @@ main::-webkit-scrollbar {
 
 nav{
     display: grid;
-    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
     background-color: white;
-    height: 40vh;
+    height: 50vh;
     width: 100vw;
     position: fixed;
-    top: -40vh;
+    top: -50vh;
     transition: top 0.3s;
     box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
     z-index: 10;
@@ -283,7 +287,7 @@ nav{
 
 
 p {
-    font-family: Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #pointer {
@@ -308,7 +312,7 @@ p {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    width: 80%;
+    width: 100%;
     justify-self: center;
 }
 
@@ -325,11 +329,13 @@ p {
 }
 
 .project_card a {
+    display: flex;
+    height: inherit;
+    flex-direction: column;
     color: white;
 }
 
 .project_card img {
-    height: 50%;
     border-radius: 5px;
 }
 
@@ -342,7 +348,7 @@ p {
     grid-template-columns: 80% 20%;
     grid-template-rows: 35% 40% 25%;
     padding: 10px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .project_program h3 {
@@ -372,6 +378,21 @@ p {
 
 #projects {
     min-height: 30%;
+}
+
+#projekt_container {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+}  
+
+#projekt_main img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#projekt_legend {
+    display: none;
 }
 
 .python {
@@ -430,6 +451,16 @@ p {
     width: 14vw;
 }
 
+.text_header {
+    font-weight: 1000;
+    text-align: right;
+}
+
+.text_small_header {
+    font-weight: 700;
+    text-align: center;
+}
+
 .TIL_img {
     border-radius: 4px;
     width: 80%;
@@ -486,6 +517,10 @@ p {
 
 .topic h4{
     margin: 0;
+}
+
+ul {
+    list-style-type: none;
 }
 
 .color_white {
@@ -591,7 +626,7 @@ p {
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto;
-        width: 60%;
+        width: 70%;
         justify-self: center;
     }
 
@@ -603,11 +638,12 @@ p {
 
     .project_card {
         justify-self: center;
-        width: 50%;
+        width: 15vw;
         height: 70%;
     }
 
     #projekt_container {
+        display: grid;
         grid-template-areas: 
         "hd hd"
         "nv mn" ;
@@ -627,24 +663,30 @@ p {
     }
 
     #projekt_main {
-        display: grid;
+        display: flex;
         grid-area: mn;
-        grid-template-rows: 20vh auto;
-        background-image: url("../img/red_ring.jpg");
+        flex-direction: column;
     }
 
     #projekt_main p { 
         height: fit-content;
-        margin-top: 40vh;
+        margin-top: 0px;
+    }
+
+    #projekt_main img {
+        height: 60vh;
+        border-radius: 10px;
     }
 
     #projekt_legend {
+        display: block;
         grid-area: nv;
         position: fixed;
         top: 15%;
         height: fit-content;
         width: 15%;
         margin: 15px;
+        font-weight: 1000;
     }
 
     #projekt_substance {
@@ -668,7 +710,7 @@ p {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto;
         overflow: initial;
-        width: auto;
+        width: 100%;
     }
 
     #TIL_container {
@@ -693,6 +735,10 @@ p {
         width: 70%;
         height: 85%;
         margin: 5px;
+    }
+
+    #TIL_main h5 {
+        text-align: center;
     }
 
     .timeline {
