@@ -573,7 +573,6 @@ ul {
 
     img {
         width: 100%;
-        height: 100%;
     }
 
     #index_article {
@@ -650,7 +649,7 @@ ul {
     .project_card {
         justify-self: center;
         width: 15vw;
-        height: 70%;
+        height: 40vh;
     }
 
     #projekt_container {
